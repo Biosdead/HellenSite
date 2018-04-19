@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld/>
+
+
+    <div class="columns ">
+  <div class="column is-one-third">
+    <product NomeProduto="Lennon" MarcaProduto="Sales Furtado" Valor="0/0" Descricao="Engenheiro"/>
+  </div>
+  <div class="column is-one-third">
+    <product NomeProduto="Hugo" MarcaProduto="Sales Furtado" Valor="0/0" Descricao="Advogado"/>
+  </div>
+  <div class="column is-one-third">
+    <product NomeProduto="Hugo" MarcaProduto="Sales Furtado" Valor="0/0" Descricao="Advogado"/>
+  </div>
+</div>
+
+    
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import product from './components/Produto.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    product
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
