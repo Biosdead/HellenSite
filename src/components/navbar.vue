@@ -1,6 +1,6 @@
 <template>
 <div>
-<nav class="navbar is-primary">
+<nav class="navbar is-primary is-fixed-top">
   <div class="navbar-brand">
     <a class="navbar-item">
       <img src="../assets/logo.png" width="112" height="28">
@@ -79,56 +79,16 @@
               </a>
         </div>
       </div>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <div class="navbar-link">
-          More
-        </div>
-        <div id="moreDropdown" class="navbar-dropdown ">
-          <a class="navbar-item " href="http://bulma.io/extensions/">
-            <div class="level is-mobile">
-              <div class="level-left">
-                <div class="level-item">
-                  <p>
-                    <strong>Extensions</strong>
-                    <br>
-                    <small>Side projects to enhance Bulma</small>
-                  </p>
-                </div>
-              </div>
-              <div class="level-right">
-                <div class="level-item">
-                  <span class="icon has-text-info">
-                    <i class="fa fa-plug"></i>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
+</div>
+    <div class="navbar-end">
       <a class="navbar-item " href="http://bulma.io/expo/">
-        <span class="bd-emoji">🎨</span> &nbsp;Expo
+        <span class="bd-emoji">🎨</span> &nbsp;Carrinho
       </a>
       <a class="navbar-item " href="http://bulma.io/love/">
-        <span class="bd-emoji">❤️</span> &nbsp;Love
+        <span class="bd-emoji">❤️</span> &nbsp;Login
       </a>
-    </div>
-
-    <div class="navbar-end">
-      <a class="navbar-item is-hidden-desktop-only" href="https://www.facebook.com/lilia.hellen" target="_blank">
-        <span class="icon" style="color: #55acee;">
-          <i class="fa fa-twitter"></i>
-        </span>
-      </a>
-      <div class="navbar-item">
-        <a class="navbar-item"  href="https://www.facebook.com/lilia.hellen">
-            <span class="icon">
-                <img src="../assets/logo-facebook.png" width="100%" height="100%" >
-            </span>
-        </a>
-      </div>
-    </div>
+    
+  </div>
   </div>
 </nav>
 </div>  
